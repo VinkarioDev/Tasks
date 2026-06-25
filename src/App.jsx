@@ -1,4 +1,5 @@
 import "./App.css"
+import { ButtonAdd } from "./components/ButtonAdd"
 import { InputTask } from "./components/InputTask"
 
 function App() {
@@ -7,7 +8,10 @@ function App() {
     <>
 
       <h1>Lista de Tarefas</h1>
-      <InputTask/>
+      <div>
+        <InputTask />
+        <ButtonAdd textBtn={"Add"} />
+      </div>
 
     </>
   )
