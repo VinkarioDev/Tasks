@@ -19,9 +19,9 @@ body {
   flex-direction: column;
   background-color: #3f3160;
   width: 400px;
-  height: 100vh;
   border-radius: 10px;
   gap: 30px;
+
 }
 
 h1 {
@@ -31,6 +31,8 @@ h1 {
 .inputButton {
   display: flex;
   gap: 15px;
+  margin-bottom: 20px;
+
 }
 
 .inputTask {
@@ -48,6 +50,7 @@ h1 {
 
 .listTask {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
