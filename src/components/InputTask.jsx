@@ -1,7 +1,7 @@
-export const InputTask = ({placeholder,onchange,value})=>{
+export const InputTask = ({placeholder,onchange,value,classe})=>{
     return(
         <>
-        <input value={value} placeholder={placeholder} onChange={onchange} type="text" />
+        <input className={classe} value={value} placeholder={placeholder} onChange={onchange} type="text" />
         </>
     )
 }
