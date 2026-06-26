@@ -42,6 +42,10 @@ h1 {
   color: #fff;
 }
 
+.inputTask::placeholder{
+    color: #FFF;
+}
+
 .listTask {
   margin-top: 20px;
   display: flex;
