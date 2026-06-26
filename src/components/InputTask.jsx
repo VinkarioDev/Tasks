@@ -1,7 +1,7 @@
-export const InputTask = ()=>{
+export const InputTask = ({placeholder,onchange,value})=>{
     return(
         <>
-        <input onChange={(e)=>e.target.value} type="text" />
+        <input value={value} placeholder={placeholder} onChange={onchange} type="text" />
         </>
     )
 }
