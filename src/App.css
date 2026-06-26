@@ -14,9 +14,9 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #3f3160;
   width: 400px;
   height: 100vh;
@@ -24,66 +24,68 @@ body {
   gap: 30px;
 }
 
-h1{
-    color: #fff;
-    margin-top: 30px;
+h1 {
+  color: #fff;
+  margin-top: 30px;
 }
-.inputButton{
-    display: flex;
-    gap: 15px;
-}
-
-.inputButton input{
-    background-color: #1b718a;
-    padding: 8px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: #fff;
+.inputButton {
+  display: flex;
+  gap: 15px;
 }
 
-.inputButton input::placeholder{
-    color: #fff;
+.inputTask {
+  background-color: #1b718a;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.listTask{
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    background-color: #9366ff;
-    padding: 5px;
-    border-radius: 4px;
+.listTask {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #9366ff;
+  padding: 5px;
+  border-radius: 4px;
 }
 
-.listTask li{
-    color: #fff;
+.listTask li {
+  color: #fff;
 }
 
-.listTask button{
-    border: none;
-    border-radius: 4px;
-    background-color: #00000000;
-    cursor: pointer;
+.listTask button {
+  border: none;
+  border-radius: 4px;
+  background-color: #00000000;
+  cursor: pointer;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.inputButton button{
-    width: 60px;
-    background-color: #ca9c17;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.inputButton button {
+  width: 60px;
+  background-color: #ca9c17;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 
 .empytInput {
   border: 1px solid red;
+  background-color: #1b718a;
+
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .empytInput::placeholder {
   color: red;
+  font-style: italic;
 }

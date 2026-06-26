@@ -22,7 +22,9 @@ function App() {
   }
   function deleteTask(index) {
     setTask(() => {
-      return task.filter((_, indexAtual) => indexAtual !== index)
+      const tmp = [...task]
+
+      return tmp.filter((_, indexAtual) => indexAtual !== index)
     })
   }
   return (
@@ -31,7 +33,7 @@ function App() {
       <div className="tasks">
         <div className="inputButton">
           <InputTask
-            classe={`${error ? "empytInput" : ""}`}
+            classe={`${error ? "empytInput" : "inputTask"}`}
             value={inputValue}
             placeholder={"Enter Task"}
             onchange={(e) => setInputValue(e.target.value)}
@@ -47,7 +49,7 @@ function App() {
               return (
                 <div className="listTask" key={index}>
                   <li >{task}</li>
-                  <button onClick={() => deleteTask(index)}>
+                  <button  onClick={() => deleteTask(index)}>
                   <FontAwesomeIcon style={{color:"#fff"}} icon={faTrash} />
 
                   </button>
