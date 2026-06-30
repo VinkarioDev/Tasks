@@ -54,9 +54,11 @@ h1 {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
   background-color: #9366ff;
   padding: 5px;
   border-radius: 4px;
+  
 }
 
 .listTask li {
@@ -95,4 +97,45 @@ ul {
 .empytInput::placeholder {
   color: red;
   font-style: italic;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.checkbox{
+   appearance: none;
+  -webkit-appearance: none; 
+  
+  width: 14px;             
+  height: 14px;
+  border: 2px solid #ca9c17;
+  border-radius: 4px;      
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.checkbox:checked {
+  background-color: #ca9c17;
+}
+
+.checkbox:checked::after {
+  content: "✓";
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.inputCheck{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
